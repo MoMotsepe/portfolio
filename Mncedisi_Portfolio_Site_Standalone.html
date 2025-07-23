@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mncedisi Motsepe | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #212529;
+    }
+
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+      font-size: 26px;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav a, nav button {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 26px;
+      border-bottom: 3px solid #dee2e6;
+      color: #0d6efd;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .dark-mode {
+      background: #1a1a1a;
+      color: #f1f1f1;
+    }
+
+    .dark-mode header, .dark-mode footer {
+      background: #000;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+      nav ul {
+        flex-direction: column;
+        display: none;
+        background: #111827;
+        width: 100%;
+        text-align: left;
+      }
+      #menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">Mncedisi Motsepe</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button onclick="toggleTheme()">Toggle Theme</button></li>
+      </ul>
+    </nav>
+  </div>
+  <p>Final Year BSc IT Student | Cybersecurity & Cloud Enthusiast</p>
+  <p>GitHub: <a href="https://github.com/MoMotsepe" target="_blank" style="color:#0d6efd;">MoMotsepe</a> | Languages: English, Zulu</p>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I’m a final-year BSc IT student at North-West University passionate about building secure, scalable technology solutions. With experience in software development, cloud fundamentals, and cybersecurity, I’m driven to solve real-world problems through innovation and teamwork. My career goal is to become a Cloud Security Engineer or Penetration Tester.
+  </p>
+</section>
+
+<section id="resume">
+  <h2>Resume / CV</h2>
+  <p><strong>Degree:</strong> BSc Information Technology, North-West University (Expected 2025)</p>
+  <p><strong>Certifications:</strong> Cybersecurity Fundamentals (CMPG215)</p>
+  <p><strong>Soft Skills:</strong> Teamwork, Communication, Problem-solving, Leadership</p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <ul>
+    <li>Programming: Java, Python, C++, C#</li>
+    <li>Web Development: HTML, CSS, Node.js</li>
+    <li>Cybersecurity: OWASP Top 10, Threat Modeling, Secure Login Systems</li>
+    <li>Cloud: AWS & Azure (basic services: IAM, EC2, VMs)</li>
+    <li>Tools: Git, GitHub, VS Code, Cisco Packet Tracer</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>DoomChat – Text Messaging App</h3>
+    <p>CMPG315 Project | Team of 6. Developed a real-time chat app for Windows using JavaScript (frontend) and C# (backend). Features group messaging, user authentication, and portable deployment (no installation required).</p>
+  </div>
+  <div class="project">
+    <h3>Municipal Maintenance Management App</h3>
+    <p>CMPG213 & CMPG223 Project | Team of 3. A service booking system for municipalities with dynamic officer allocation, form-based input, and calendar-based job scheduling built in Java using OOP principles.</p>
+  </div>
+  <p>Explore more on GitHub: <a href="https://github.com/MoMotsepe" target="_blank">github.com/MoMotsepe</a></p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:motsepemncedisi@gmail.com">motsepemncedisi@gmail.com</a></p>
+  <p>Location: South Africa | Open to remote roles and internships</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/mncedisi-motsepe-21b788376" target="_blank">linkedin.com/in/mncedisi-motsepe-21b788376</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Mncedisi Motsepe | All Rights Reserved
+</footer>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+</body>
+</html>
